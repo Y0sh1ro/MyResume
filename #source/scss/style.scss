@@ -14,8 +14,25 @@ body {
 }
 
 .container {
-   max-width: 1180px;
+   max-width: 1200px;
    margin: 0 auto;
+   padding: 0 10px;
+}
+
+@media (max-width:1200px){
+   .container{
+      max-width: 970px;
+   }
+}
+@media (max-width:992px){
+   .container{
+      max-width: 750px;
+   }
+}
+@media (max-width:767px){
+   .container{
+      max-width: none;
+   }
 }
 
 .content {
@@ -51,7 +68,6 @@ body {
          border-radius: 5px;
 		}
       &__image img{
-         max-width: 320px;
          border-radius: 5px;
 		}
 
@@ -179,7 +195,6 @@ body {
 
    &__row {
       display: flex;
-      height: 65px;
       justify-content: center;
       align-items: center;
    }
